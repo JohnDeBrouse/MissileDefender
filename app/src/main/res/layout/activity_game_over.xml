@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".GameOver">
+
+    <ImageView
+        android:id="@+id/gameover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/game_over" />
+
+    <TextView
+        android:id="@+id/scores"
+        android:layout_width="750dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="60dp"
+        android:gravity="right"
+        android:textAlignment="gravity"
+        android:textColor="#5BFF00"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.695" />
+
+    <TextView
+        android:id="@+id/stuff"
+        android:layout_width="750dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="#            Init              Level            Score              Date/Time   "
+        android:textAlignment="gravity"
+        android:textColor="#5BFF00"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/scores"
+        app:layout_constraintEnd_toEndOf="@+id/scores"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.926" />
+
+    <TextView
+        android:id="@+id/ranks"
+        android:layout_width="36dp"
+        android:layout_height="315dp"
+        android:layout_marginEnd="596dp"
+        android:gravity="right"
+        android:text="1\n2\n3\n4\n5\n6\n7\n8\n9\n10"
+        android:textAlignment="gravity"
+        android:textColor="#2EFD00"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/scores"
+        app:layout_constraintTop_toBottomOf="@+id/stuff" />
+
+    <TextView
+        android:id="@+id/topplayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="Top Players"
+        android:textColor="#84FF00"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/stuff"
+        app:layout_constraintEnd_toEndOf="@+id/gameover"
+        app:layout_constraintStart_toStartOf="@+id/gameover" />
+</androidx.constraintlayout.widget.ConstraintLayout>
